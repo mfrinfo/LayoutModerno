@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/11/26 21:19:27.000.386,=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2019/11/27 21:12:19.000.609,=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2019/11/27 22:07:36.000.974,=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2019/12/10 20:51:27.000.333,=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2019/12/17 21:07:25.000.760,=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/02/12 20:23:53.000.788,=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/02/12 20:24:18.000.856,=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/02/12 20:25:57.106,=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/02/12 20:26:37.727,C:\udemy\LayoutModerno\uPrincipal.dfm=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2020/02/12 20:26:37.727,C:\udemy\LayoutModerno\uPrincipal.pas=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/02/12 20:26:53.974,C:\udemy\LayoutModerno\LayoutModerno.dproj=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2020/02/12 20:31:28.893,=C:\udemy\LayoutModerno\Unit1.pas</Transaction>
+    <Transaction>2020/02/12 20:31:45.298,C:\udemy\LayoutModerno\uSplash.pas=C:\udemy\LayoutModerno\Unit1.pas</Transaction>
+    <Transaction>2020/02/12 20:31:45.298,C:\udemy\LayoutModerno\uSplash.dfm=C:\udemy\LayoutModerno\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
