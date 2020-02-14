@@ -8,7 +8,9 @@ uses
 
 type
   TfrmPrincipal = class(TForm)
+    BitBtn1: TBitBtn;
     procedure FormShow(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -22,7 +24,14 @@ implementation
 
 {$R *.dfm}
 
-uses uSplash;
+uses uSplash, uHerancaBase;
+
+procedure TfrmPrincipal.BitBtn1Click(Sender: TObject);
+begin
+  frmHerancaBase:= TfrmHerancaBase.Create(Self);
+  frmHerancaBase.ShowModal;
+  frmHerancaBase.Release;
+end;
 
 procedure TfrmPrincipal.FormShow(Sender: TObject);
 begin

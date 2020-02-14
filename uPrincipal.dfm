@@ -15,4 +15,13 @@ object frmPrincipal: TfrmPrincipal
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
+  object BitBtn1: TBitBtn
+    Left = 24
+    Top = 24
+    Width = 75
+    Height = 25
+    Caption = 'BitBtn1'
+    TabOrder = 0
+    OnClick = BitBtn1Click
+  end
 end
