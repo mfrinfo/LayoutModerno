@@ -2,8 +2,8 @@ object frmHerancaBase: TfrmHerancaBase
   Left = 0
   Top = 0
   BorderStyle = bsNone
-  ClientHeight = 387
-  ClientWidth = 686
+  ClientHeight = 472
+  ClientWidth = 745
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,20 +18,26 @@ object frmHerancaBase: TfrmHerancaBase
   object pnlHeader: TPanel
     Left = 0
     Top = 0
-    Width = 686
+    Width = 745
     Height = 27
     Align = alTop
     BevelOuter = bvNone
     ParentBackground = False
     TabOrder = 0
     OnMouseDown = pnlHeaderMouseDown
+    ExplicitWidth = 686
+    DesignSize = (
+      745
+      27)
     object imgBtnClose: TImage
-      Left = 666
+      Left = 724
       Top = 5
       Width = 16
       Height = 16
+      Cursor = crHandPoint
+      Anchors = [akTop, akRight]
       AutoSize = True
-      DragCursor = crHandPoint
+      DragCursor = crDefault
       Picture.Data = {
         0954506E67496D61676589504E470D0A1A0A0000000D49484452000000100000
         00100804000000B5FA37EA0000000467414D410000B18F0BFC61050000000262
@@ -48,6 +54,7 @@ object frmHerancaBase: TfrmHerancaBase
         007777772E696E6B73636170652E6F72679BEE3C1A0000000049454E44AE4260
         82}
       OnClick = imgBtnCloseClick
+      ExplicitLeft = 666
     end
     object lblTitulo: TLabel
       Left = 7
@@ -66,13 +73,14 @@ object frmHerancaBase: TfrmHerancaBase
     object pnlHeaderLineTop: TPanel
       Left = 0
       Top = 0
-      Width = 686
+      Width = 745
       Height = 1
       Align = alTop
       BevelOuter = bvNone
       Color = clBlack
       ParentBackground = False
       TabOrder = 0
+      ExplicitWidth = 686
     end
     object pnlHeaderLineLeft: TPanel
       Left = 0
@@ -86,7 +94,7 @@ object frmHerancaBase: TfrmHerancaBase
       TabOrder = 1
     end
     object pnlHeaderLineRight: TPanel
-      Left = 685
+      Left = 744
       Top = 1
       Width = 1
       Height = 26
@@ -95,49 +103,57 @@ object frmHerancaBase: TfrmHerancaBase
       Color = clBlack
       ParentBackground = False
       TabOrder = 2
+      ExplicitLeft = 685
     end
     object pnlHeaderLineGray: TPanel
       Left = 7
       Top = 25
-      Width = 671
+      Width = 729
       Height = 1
+      Anchors = [akLeft, akTop, akRight]
       BevelOuter = bvNone
       Color = clSilver
       ParentBackground = False
       TabOrder = 3
+      ExplicitWidth = 671
     end
   end
   object pnlFormLineLeft: TPanel
     Left = 0
     Top = 27
     Width = 1
-    Height = 359
+    Height = 444
     Align = alLeft
     BevelOuter = bvNone
     Color = clBlack
     ParentBackground = False
     TabOrder = 1
+    ExplicitHeight = 359
   end
   object pnlFormLineRight: TPanel
-    Left = 685
+    Left = 744
     Top = 27
     Width = 1
-    Height = 359
+    Height = 444
     Align = alRight
     BevelOuter = bvNone
     Color = clBlack
     ParentBackground = False
     TabOrder = 2
+    ExplicitLeft = 685
+    ExplicitHeight = 359
   end
   object pnlFormLineBottom: TPanel
     Left = 0
-    Top = 386
-    Width = 686
+    Top = 471
+    Width = 745
     Height = 1
     Align = alBottom
     BevelOuter = bvNone
     Color = clBlack
     ParentBackground = False
     TabOrder = 3
+    ExplicitTop = 386
+    ExplicitWidth = 686
   end
 end
