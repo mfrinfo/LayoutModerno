@@ -3,9 +3,9 @@ unit uHerancaBase;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
-  Vcl.Imaging.pngimage;
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage, System.ImageList, Vcl.ImgList;
 
 type
   TfrmHerancaBase = class(TForm)
@@ -24,6 +24,7 @@ type
       Shift: TShiftState; X, Y: Integer);
     procedure FormShow(Sender: TObject);
   private
+
     { Private declarations }
   public
     { Public declarations }
