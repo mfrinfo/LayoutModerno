@@ -9,16 +9,22 @@
     <Transaction>2020/02/12 20:23:53.000.788,=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
     <Transaction>2020/02/12 20:24:18.000.856,=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
     <Transaction>2020/02/12 20:25:57.000.106,=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2020/02/12 20:26:37.000.727,C:\udemy\LayoutModerno\uPrincipal.dfm=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
-    <Transaction>2020/02/12 20:26:37.000.727,C:\udemy\LayoutModerno\uPrincipal.pas=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2020/02/12 20:26:53.000.974,C:\udemy\LayoutModerno\LayoutModerno.dproj=C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2020/02/12 20:26:37.000.727,C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\udemy\LayoutModerno\uPrincipal.dfm</Transaction>
+    <Transaction>2020/02/12 20:26:37.000.727,C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\udemy\LayoutModerno\uPrincipal.pas</Transaction>
+    <Transaction>2020/02/12 20:26:53.000.974,C:\Users\mfrin\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\udemy\LayoutModerno\LayoutModerno.dproj</Transaction>
     <Transaction>2020/02/12 20:31:28.000.893,=C:\udemy\LayoutModerno\Unit1.pas</Transaction>
-    <Transaction>2020/02/12 20:31:45.000.298,C:\udemy\LayoutModerno\uSplash.dfm=C:\udemy\LayoutModerno\Unit1.dfm</Transaction>
-    <Transaction>2020/02/12 20:31:45.000.298,C:\udemy\LayoutModerno\uSplash.pas=C:\udemy\LayoutModerno\Unit1.pas</Transaction>
+    <Transaction>2020/02/12 20:31:45.000.298,C:\udemy\LayoutModerno\Unit1.dfm=C:\udemy\LayoutModerno\uSplash.dfm</Transaction>
+    <Transaction>2020/02/12 20:31:45.000.298,C:\udemy\LayoutModerno\Unit1.pas=C:\udemy\LayoutModerno\uSplash.pas</Transaction>
     <Transaction>2020/02/13 20:28:24.000.257,=C:\udemy\LayoutModerno\Unit1.pas</Transaction>
-    <Transaction>2020/02/13 20:28:46.000.343,C:\udemy\LayoutModerno\Unit1.pas=C:\udemy\LayoutModerno\uTelaBase.pas</Transaction>
-    <Transaction>2020/02/13 20:28:46.000.343,C:\udemy\LayoutModerno\Unit1.dfm=C:\udemy\LayoutModerno\uTelaBase.dfm</Transaction>
-    <Transaction>2020/02/13 20:41:32.000.843,C:\udemy\LayoutModerno\uTelaBase.dfm=C:\udemy\LayoutModerno\uHerancaBase.dfm</Transaction>
-    <Transaction>2020/02/13 20:41:32.000.843,C:\udemy\LayoutModerno\uTelaBase.pas=C:\udemy\LayoutModerno\uHerancaBase.pas</Transaction>
+    <Transaction>2020/02/13 20:28:46.000.343,C:\udemy\LayoutModerno\uTelaBase.pas=C:\udemy\LayoutModerno\Unit1.pas</Transaction>
+    <Transaction>2020/02/13 20:28:46.000.343,C:\udemy\LayoutModerno\uTelaBase.dfm=C:\udemy\LayoutModerno\Unit1.dfm</Transaction>
+    <Transaction>2020/02/13 20:41:32.000.843,C:\udemy\LayoutModerno\uHerancaBase.pas=C:\udemy\LayoutModerno\uTelaBase.pas</Transaction>
+    <Transaction>2020/02/13 20:41:32.000.843,C:\udemy\LayoutModerno\uHerancaBase.dfm=C:\udemy\LayoutModerno\uTelaBase.dfm</Transaction>
+    <Transaction>2020/02/19 20:33:34.000.630,=C:\udemy\LayoutModerno\Unit1.pas</Transaction>
+    <Transaction>2020/02/19 20:34:49.000.891,C:\udemy\LayoutModerno\Unit1.pas=C:\udemy\LayoutModerno\uHerancaListagem.pas</Transaction>
+    <Transaction>2020/02/19 20:34:49.000.891,C:\udemy\LayoutModerno\Unit1.dfm=C:\udemy\LayoutModerno\uHerancaListagem.dfm</Transaction>
+    <Transaction>2020/02/20 20:42:37.403,=C:\udemy\LayoutModerno\Unit1.pas</Transaction>
+    <Transaction>2020/02/20 20:42:53.052,C:\udemy\LayoutModerno\uHerancaCadastro.pas=C:\udemy\LayoutModerno\Unit1.pas</Transaction>
+    <Transaction>2020/02/20 20:42:53.052,C:\udemy\LayoutModerno\uHerancaCadastro.dfm=C:\udemy\LayoutModerno\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>
