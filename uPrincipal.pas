@@ -24,13 +24,13 @@ implementation
 
 {$R *.dfm}
 
-uses uSplash, uHerancaBase;
+uses uSplash, uHerancaBase, uHerancaListagem;
 
 procedure TfrmPrincipal.BitBtn1Click(Sender: TObject);
 begin
-  frmHerancaBase:= TfrmHerancaBase.Create(Self);
-  frmHerancaBase.ShowModal;
-  frmHerancaBase.Release;
+  frmHerancaListagem:= TfrmHerancaListagem.Create(Self);
+  frmHerancaListagem.ShowModal;
+  frmHerancaListagem.Release;
 end;
 
 procedure TfrmPrincipal.FormShow(Sender: TObject);

@@ -18,9 +18,9 @@ object frmPrincipal: TfrmPrincipal
   object BitBtn1: TBitBtn
     Left = 24
     Top = 24
-    Width = 75
+    Width = 121
     Height = 25
-    Caption = 'BitBtn1'
+    Caption = 'Teste Listagem'
     TabOrder = 0
     OnClick = BitBtn1Click
   end
