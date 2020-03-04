@@ -33,6 +33,7 @@ type
     procedure btnFecharMouseLeave(Sender: TObject);
     procedure btnNovoClick(Sender: TObject);
     procedure btnFecharClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -46,7 +47,7 @@ implementation
 
 {$R *.dfm}
 
-uses uHerancaCadastro;
+uses uHerancaCadastro, uFuncoes, uPrincipal;
 
 procedure TfrmHerancaListagem.bntModificarMouseEnter(Sender: TObject);
 begin
@@ -108,6 +109,13 @@ procedure TfrmHerancaListagem.btnNovoMouseLeave(Sender: TObject);
 begin
   inherited;
   ButtonMouseLeave(Sender, 1);
+end;
+
+procedure TfrmHerancaListagem.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  inherited;
+  FecharAba(Self.Caption,frmPrincipal.pgcPrincipal);
 end;
 
 end.
