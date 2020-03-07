@@ -1,16 +1,21 @@
 inherited frmHerancaCadastro: TfrmHerancaCadastro
   ClientHeight = 345
+  KeyPreview = True
+  OnKeyDown = FormKeyDown
   ExplicitHeight = 345
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlFormLineLeft: TPanel
     Height = 317
+    ExplicitHeight = 317
   end
   inherited pnlFormLineRight: TPanel
     Height = 317
+    ExplicitHeight = 317
   end
   inherited pnlFormLineBottom: TPanel
     Top = 344
+    ExplicitTop = 344
   end
   object pnlPrincipal: TPanel [4]
     Left = 1
@@ -20,10 +25,8 @@ inherited frmHerancaCadastro: TfrmHerancaCadastro
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 4
-    ExplicitLeft = 408
-    ExplicitTop = 232
-    ExplicitWidth = 185
-    ExplicitHeight = 41
+    ExplicitLeft = -5
+    ExplicitTop = 26
     object pnlPrincipalBottom: TPanel
       Left = 0
       Top = 268
@@ -32,8 +35,6 @@ inherited frmHerancaCadastro: TfrmHerancaCadastro
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitLeft = -6
-      ExplicitTop = 299
       object btnCancelar: TJvImgBtn
         Left = 6
         Top = 7
@@ -42,6 +43,7 @@ inherited frmHerancaCadastro: TfrmHerancaCadastro
         ImageIndex = 7
         Images = imgButtons
         TabOrder = 0
+        OnClick = btnCancelarClick
         OnMouseEnter = btnCancelarMouseEnter
         OnMouseLeave = btnCancelarMouseLeave
       end
@@ -53,6 +55,7 @@ inherited frmHerancaCadastro: TfrmHerancaCadastro
         ImageIndex = 5
         Images = imgButtons
         TabOrder = 1
+        OnClick = bntGravarClick
         OnMouseEnter = bntGravarMouseEnter
         OnMouseLeave = bntGravarMouseLeave
       end
@@ -64,9 +67,28 @@ inherited frmHerancaCadastro: TfrmHerancaCadastro
         ImageIndex = 9
         Images = imgButtons
         TabOrder = 2
+        OnClick = btnApagarClick
         OnMouseEnter = btnApagarMouseEnter
         OnMouseLeave = btnApagarMouseLeave
       end
     end
+  end
+  object QryCadastro: TZQuery
+    UpdateObject = updCadastro
+    AfterPost = QryCadastroAfterPost
+    AfterDelete = QryCadastroAfterDelete
+    Params = <>
+    Left = 425
+    Top = 11
+  end
+  object updCadastro: TZUpdateSQL
+    UseSequenceFieldForRefreshSQL = False
+    Left = 497
+    Top = 11
+  end
+  object dtsCadastro: TDataSource
+    DataSet = QryCadastro
+    Left = 561
+    Top = 11
   end
 end

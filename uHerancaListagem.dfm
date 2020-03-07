@@ -9,22 +9,25 @@ inherited frmHerancaListagem: TfrmHerancaListagem
   TextHeight = 13
   inherited pnlHeader: TPanel
     Width = 986
-    ExplicitWidth = 991
+    ExplicitWidth = 986
+    DesignSize = (
+      986
+      27)
     inherited imgBtnClose: TImage
       Left = 965
       ExplicitLeft = 970
     end
     inherited pnlHeaderLineTop: TPanel
       Width = 986
-      ExplicitWidth = 991
+      ExplicitWidth = 986
     end
     inherited pnlHeaderLineRight: TPanel
       Left = 985
-      ExplicitLeft = 990
+      ExplicitLeft = 985
     end
     inherited pnlHeaderLineGray: TPanel
       Width = 970
-      ExplicitWidth = 975
+      ExplicitWidth = 970
     end
   end
   inherited pnlFormLineLeft: TPanel
@@ -34,14 +37,14 @@ inherited frmHerancaListagem: TfrmHerancaListagem
   inherited pnlFormLineRight: TPanel
     Left = 985
     Height = 568
-    ExplicitLeft = 990
+    ExplicitLeft = 985
     ExplicitHeight = 568
   end
   inherited pnlFormLineBottom: TPanel
     Top = 595
     Width = 986
     ExplicitTop = 595
-    ExplicitWidth = 991
+    ExplicitWidth = 986
   end
   object pnlFormPrincipal: TPanel [4]
     Left = 1
@@ -51,7 +54,6 @@ inherited frmHerancaListagem: TfrmHerancaListagem
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 4
-    ExplicitWidth = 989
     object pnlFormPrincipalTop: TPanel
       Left = 0
       Top = 0
@@ -60,7 +62,6 @@ inherited frmHerancaListagem: TfrmHerancaListagem
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitWidth = 989
       DesignSize = (
         984
         70)
@@ -87,16 +88,16 @@ inherited frmHerancaListagem: TfrmHerancaListagem
         Color = clBlack
         ParentBackground = False
         TabOrder = 0
-        ExplicitWidth = 989
       end
       object mskPesquisar: TMaskEdit
         Left = 6
-        Top = 36
+        Top = 37
         Width = 379
         Height = 21
         TabOrder = 1
         Text = ''
         TextHint = 'Digite sua pesquisa'
+        OnChange = mskPesquisarChange
       end
       object btnNovo: TJvImgBtn
         Left = 640
@@ -110,7 +111,6 @@ inherited frmHerancaListagem: TfrmHerancaListagem
         OnClick = btnNovoClick
         OnMouseEnter = btnNovoMouseEnter
         OnMouseLeave = btnNovoMouseLeave
-        ExplicitLeft = 653
       end
       object bntModificar: TJvImgBtn
         Left = 755
@@ -123,7 +123,6 @@ inherited frmHerancaListagem: TfrmHerancaListagem
         TabOrder = 3
         OnMouseEnter = bntModificarMouseEnter
         OnMouseLeave = bntModificarMouseLeave
-        ExplicitLeft = 768
       end
       object btnApagar: TJvImgBtn
         Left = 870
@@ -136,7 +135,6 @@ inherited frmHerancaListagem: TfrmHerancaListagem
         TabOrder = 4
         OnMouseEnter = btnApagarMouseEnter
         OnMouseLeave = btnApagarMouseLeave
-        ExplicitLeft = 883
       end
     end
     object pnlFormPrincipalBottom: TPanel
@@ -147,7 +145,6 @@ inherited frmHerancaListagem: TfrmHerancaListagem
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitWidth = 989
       DesignSize = (
         984
         49)
@@ -161,13 +158,13 @@ inherited frmHerancaListagem: TfrmHerancaListagem
         Color = clBlack
         ParentBackground = False
         TabOrder = 0
-        ExplicitWidth = 989
       end
       object DBNavigator1: TDBNavigator
         Left = 6
         Top = 6
         Width = 224
         Height = 36
+        DataSource = DtsListagem
         VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
         TabOrder = 1
       end
@@ -183,7 +180,6 @@ inherited frmHerancaListagem: TfrmHerancaListagem
         OnClick = btnFecharClick
         OnMouseEnter = btnFecharMouseEnter
         OnMouseLeave = btnFecharMouseLeave
-        ExplicitLeft = 883
       end
     end
     object grdListagem: TDBGrid
@@ -194,6 +190,8 @@ inherited frmHerancaListagem: TfrmHerancaListagem
       Align = alClient
       BorderStyle = bsNone
       Ctl3D = True
+      DataSource = DtsListagem
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
       ParentCtl3D = False
       TabOrder = 2
       TitleFont.Charset = DEFAULT_CHARSET
@@ -201,6 +199,19 @@ inherited frmHerancaListagem: TfrmHerancaListagem
       TitleFont.Height = -11
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnKeyDown = grdListagemKeyDown
+      OnTitleClick = grdListagemTitleClick
     end
+  end
+  object QryListagem: TZQuery
+    Connection = dtmConexao.SQLConnection
+    Params = <>
+    Left = 417
+    Top = 35
+  end
+  object DtsListagem: TDataSource
+    DataSet = QryListagem
+    Left = 481
+    Top = 35
   end
 end

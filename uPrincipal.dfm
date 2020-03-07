@@ -12,6 +12,8 @@ object frmPrincipal: TfrmPrincipal
   Font.Style = []
   OldCreateOrder = False
   WindowState = wsMaximized
+  OnClose = FormClose
+  OnCreate = FormCreate
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
@@ -23,9 +25,6 @@ object frmPrincipal: TfrmPrincipal
     Align = alLeft
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = 48
-    ExplicitTop = 72
-    ExplicitHeight = 41
     object BitBtn1: TBitBtn
       Left = 40
       Top = 88
@@ -44,7 +43,6 @@ object frmPrincipal: TfrmPrincipal
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = 191
     object pnlPrincipalCenterLeft: TPanel
       Left = 0
       Top = 10
@@ -53,8 +51,6 @@ object frmPrincipal: TfrmPrincipal
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitLeft = -6
-      ExplicitTop = 4
     end
     object pnlPrincipalCenterRight: TPanel
       Left = 727
@@ -64,7 +60,6 @@ object frmPrincipal: TfrmPrincipal
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 732
     end
     object pnlPrincipalCenterTop: TPanel
       Left = 0
@@ -74,8 +69,6 @@ object frmPrincipal: TfrmPrincipal
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitLeft = 717
-      ExplicitWidth = 546
     end
     object pnlPrincipalCenterBottom: TPanel
       Left = 0
@@ -85,7 +78,6 @@ object frmPrincipal: TfrmPrincipal
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 3
-      ExplicitTop = 8
     end
     object pgcPrincipal: TPageControl
       Left = 10
