@@ -121,6 +121,20 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="uFuncoes.pas"/>
+        <DCCReference Include="uDtmConexao.pas">
+            <Form>dtmConexao</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="uBancoListagem.pas">
+            <Form>frmBancoListagem</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="uEnum.pas"/>
+        <DCCReference Include="uBancoCadastro.pas">
+            <Form>frmBancoCadastro</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -142,6 +156,7 @@
                     <Source Name="MainSource">LayoutModerno.dpr</Source>
                 </Source>
                 <Excluded_Packages>
+                    <Excluded_Packages Name="C:\ACBR\Lib\Delphi\LibD26\ACBr_Integrador.bpl">ACBr - Integrador - (http://www.projetoacbr.com.br/)</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k260.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp260.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
