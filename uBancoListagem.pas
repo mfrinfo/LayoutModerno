@@ -84,4 +84,7 @@ begin
   AbrirCadastro(ecNovo);
 end;
 
+initialization
+   RegisterClass(TfrmBancoListagem);
+
 end.
