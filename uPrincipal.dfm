@@ -19,15 +19,12 @@ object frmPrincipal: TfrmPrincipal
   TextHeight = 13
   object pnlPrincipalLeft: TPanel
     Left = 0
-    Top = 51
+    Top = 73
     Width = 185
-    Height = 602
+    Height = 580
     Align = alLeft
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = 4
-    ExplicitTop = 41
-    ExplicitHeight = 612
     object btnCriarMenu: TBitBtn
       Left = 32
       Top = 16
@@ -49,35 +46,29 @@ object frmPrincipal: TfrmPrincipal
   end
   object pnlPrincipalCenter: TPanel
     Left = 185
-    Top = 51
+    Top = 73
     Width = 844
-    Height = 602
+    Height = 580
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitTop = 44
-    ExplicitWidth = 737
-    ExplicitHeight = 546
     object pnlPrincipalCenterLeft: TPanel
       Left = 0
       Top = 10
       Width = 10
-      Height = 582
+      Height = 560
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitHeight = 526
     end
     object pnlPrincipalCenterRight: TPanel
       Left = 834
       Top = 10
       Width = 10
-      Height = 582
+      Height = 560
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 727
-      ExplicitHeight = 526
     end
     object pnlPrincipalCenterTop: TPanel
       Left = 0
@@ -87,47 +78,37 @@ object frmPrincipal: TfrmPrincipal
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitWidth = 737
     end
     object pnlPrincipalCenterBottom: TPanel
       Left = 0
-      Top = 592
+      Top = 570
       Width = 844
       Height = 10
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 3
-      ExplicitTop = 536
-      ExplicitWidth = 737
     end
     object pgcPrincipal: TPageControl
       Left = 10
       Top = 10
       Width = 824
-      Height = 582
+      Height = 560
       ActivePage = tbsMenu
       Align = alClient
       TabOrder = 4
-      ExplicitLeft = 6
-      ExplicitTop = 6
-      ExplicitHeight = 592
       object tbsMenu: TTabSheet
         Caption = 'MENU'
-        ExplicitLeft = 2
-        ExplicitTop = 22
-        ExplicitHeight = 564
         object scbIcones: TScrollBox
           Left = 0
           Top = 0
           Width = 816
-          Height = 554
+          Height = 532
           Align = alClient
           BevelInner = bvNone
           BevelOuter = bvNone
           Ctl3D = False
           ParentCtl3D = False
           TabOrder = 0
-          ExplicitHeight = 564
         end
       end
     end
@@ -136,15 +117,15 @@ object frmPrincipal: TfrmPrincipal
     Left = 0
     Top = 0
     Width = 1029
-    Height = 51
+    Height = 73
     Align = alTop
     BevelOuter = bvNone
-    Color = 9502720
+    Color = 4533029
     ParentBackground = False
     TabOrder = 2
     DesignSize = (
       1029
-      51)
+      73)
     object Image1: TImage
       Left = 8
       Top = 3
@@ -231,11 +212,10 @@ object frmPrincipal: TfrmPrincipal
       Images = imgButtons
       TabOrder = 0
       OnClick = btnFecharClick
-      ExplicitLeft = 901
     end
     object Panel1: TPanel
       Left = 0
-      Top = 43
+      Top = 44
       Width = 1029
       Height = 8
       Align = alBottom
@@ -243,7 +223,16 @@ object frmPrincipal: TfrmPrincipal
       Color = 15457754
       ParentBackground = False
       TabOrder = 1
-      ExplicitTop = 41
+    end
+    object edtLocalizarMenu: TSearchBox
+      Left = 0
+      Top = 52
+      Width = 1029
+      Height = 21
+      Align = alBottom
+      TabOrder = 2
+      TextHint = 'DIGITE O QUE VOC'#202' DESEJA FAZER'
+      OnInvokeSearch = edtLocalizarMenuInvokeSearch
     end
   end
   object imgButtons: TImageList

@@ -16,19 +16,25 @@ File_13=TSourceModule,'C:\AzureDevOps\delivermanager\UPrincipal.pas',0,1,1,60,26
 
 [Modules]
 Module0=C:\udemy\LayoutModerno\uPrincipal.pas
-Module1=C:\udemy\LayoutModerno\uHerancaCadastro.pas
-Module2=C:\udemy\LayoutModerno\uBancoListagem.pas
-Module3=C:\udemy\LayoutModerno\uHerancaListagem.pas
-Module4=C:\udemy\LayoutModerno\uDtmConexao.pas
-Module5=C:\udemy\LayoutModerno\uEnum.pas
-Module6=C:\udemy\LayoutModerno\uBancoCadastro.pas
-Module7=C:\udemy\LayoutModerno\uFuncoes.pas
-Module8=default.htm
+Module1=C:\udemy\LayoutModerno\uDtmConexao.pas
+Module2=default.htm
+Module3=C:\udemy\LayoutModerno\uHerancaCadastro.pas
+Module4=C:\udemy\LayoutModerno\uBancoListagem.pas
+Module5=C:\udemy\LayoutModerno\uHerancaListagem.pas
+Module6=C:\udemy\LayoutModerno\uEnum.pas
+Module7=C:\udemy\LayoutModerno\uBancoCadastro.pas
+Module8=C:\udemy\LayoutModerno\uFuncoes.pas
 Count=9
 EditWindowCount=1
 
 [C:\udemy\LayoutModerno\uPrincipal.pas]
 ModuleType=TSourceModule
+
+[C:\udemy\LayoutModerno\uDtmConexao.pas]
+ModuleType=TSourceModule
+
+[default.htm]
+ModuleType=TURLModule
 
 [C:\udemy\LayoutModerno\uHerancaCadastro.pas]
 ModuleType=TSourceModule
@@ -39,9 +45,6 @@ ModuleType=TSourceModule
 [C:\udemy\LayoutModerno\uHerancaListagem.pas]
 ModuleType=TSourceModule
 
-[C:\udemy\LayoutModerno\uDtmConexao.pas]
-ModuleType=TSourceModule
-
 [C:\udemy\LayoutModerno\uEnum.pas]
 ModuleType=TSourceModule
 
@@ -50,9 +53,6 @@ ModuleType=TSourceModule
 
 [C:\udemy\LayoutModerno\uFuncoes.pas]
 ModuleType=TSourceModule
-
-[default.htm]
-ModuleType=TURLModule
 
 [EditWindow0]
 ViewCount=9
@@ -84,13 +84,13 @@ BorlandEditorCodeExplorer=BorlandEditorCodeExplorer@EditWindow0
 TopPanelSize=0
 LeftPanelSize=1896
 LeftPanelClients=PropertyInspector,DockSite3
-LeftPanelData=00000800010100000000760F00000000000001680700000000000001000000005C0E000009000000446F636B536974653301000000007D1B00001100000050726F7065727479496E73706563746F72FFFFFFFF
+LeftPanelData=000008000101000000007C0F00000000000001680700000000000001000000005C0E000009000000446F636B53697465330100000000861B00001100000050726F7065727479496E73706563746F72FFFFFFFF
 RightPanelSize=2000
 RightPanelClients=DockSite2,DockSite4
-RightPanelData=00000800010100000000760F00000000000001D00700000000000001000000004412000009000000446F636B536974653201000000007D1B000009000000446F636B5369746534FFFFFFFF
-BottomPanelSize=1593
-BottomPanelClients=DockSite1,MessageView
-BottomPanelData=0000080001020100000009000000446F636B5369746531DE440000000000000239060000000000000100000000DE4400000F0000004D65737361676556696577466F726DFFFFFFFF
+RightPanelData=000008000101000000007C0F00000000000001D00700000000000001000000004412000009000000446F636B53697465320100000000861B000009000000446F636B5369746534FFFFFFFF
+BottomPanelSize=1583
+BottomPanelClients=MessageView,DockSite1
+BottomPanelData=0000080001020100000009000000446F636B5369746531DE44000000000000022F060000000000000100000000DE4400000F0000004D65737361676556696577466F726DFFFFFFFF
 BottomMiddlePanelSize=0
 BottomMiddlePanelClients=DockSite0,GraphDrawingModel
 BottomMiddelPanelData=0000080001020200000009000000446F636B536974653010000000477261706844726177696E67566965779F1D00000000000002F206000000000000FFFFFFFF
@@ -102,9 +102,9 @@ WelcomePageURL=bds:/default.htm
 [View1]
 CustomEditViewType=TEditView
 Module=C:\udemy\LayoutModerno\uPrincipal.pas
-CursorX=1
-CursorY=30
-TopLine=17
+CursorX=75
+CursorY=220
+TopLine=210
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -163,7 +163,7 @@ TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\udemy\LayoutModerno\uDtmConexao.pas
+EditViewName=Borland.FormDesignerView
 
 [View7]
 CustomEditViewType=TEditView
@@ -204,11 +204,11 @@ State=0
 Left=0
 Top=0
 Width=3823
-Height=1115
+Height=1106
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1115
+ClientHeight=1106
 TBDockHeight=212
 LRDockWidth=13604
 Dockable=1
@@ -277,12 +277,12 @@ State=0
 Left=0
 Top=28
 Width=9917
-Height=1385
+Height=1375
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=9917
-ClientHeight=1385
-TBDockHeight=1385
+ClientHeight=1375
+TBDockHeight=1375
 LRDockWidth=2771
 Dockable=1
 StayOnTop=0
@@ -296,11 +296,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=2183
+Height=2192
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=2183
+ClientHeight=2192
 TBDockHeight=7154
 LRDockWidth=2000
 Dockable=1
@@ -314,14 +314,14 @@ Docked=0
 State=0
 Left=0
 Top=0
-Width=1948
-Height=4279
+Width=1786
+Height=6115
 MaxLeft=-5
 MaxTop=-10
-ClientWidth=1885
-ClientHeight=3913
-TBDockHeight=4279
-LRDockWidth=1948
+ClientWidth=1724
+ClientHeight=5750
+TBDockHeight=6115
+LRDockWidth=1786
 Dockable=1
 StayOnTop=0
 
@@ -334,12 +334,12 @@ State=0
 Left=0
 Top=425
 Width=1896
-Height=3221
+Height=3231
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1896
-ClientHeight=3221
-TBDockHeight=9010
+ClientHeight=3231
+TBDockHeight=8769
 LRDockWidth=1896
 Dockable=1
 StayOnTop=0
@@ -347,8 +347,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Alignment,
-ExpandedItems=Anchors=0,BevelEdges=0,Constraints=0,Font=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,Padding=0
+SelectedItem=Text,OnChange
+ExpandedItems=StyleElements=0,Touch=0,LiveBindings=0,Anchors=0,BevelEdges=0,Constraints=0,Font=0,"LiveBindings Designer=0",Margins=0,Options=0,ShowRecordTypes=0,Connection=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -400,11 +400,11 @@ State=0
 Left=0
 Top=0
 Width=3823
-Height=1115
+Height=1106
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1115
+ClientHeight=1106
 TBDockHeight=413
 LRDockWidth=4953
 Dockable=1
@@ -419,11 +419,11 @@ State=0
 Left=0
 Top=0
 Width=3823
-Height=1115
+Height=1106
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1115
+ClientHeight=1106
 TBDockHeight=212
 LRDockWidth=7406
 Dockable=1
@@ -442,11 +442,11 @@ State=0
 Left=0
 Top=0
 Width=3823
-Height=1115
+Height=1106
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1115
+ClientHeight=1106
 TBDockHeight=1538
 LRDockWidth=3484
 Dockable=1
@@ -461,11 +461,11 @@ State=0
 Left=0
 Top=0
 Width=3823
-Height=1115
+Height=1106
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1115
+ClientHeight=1106
 TBDockHeight=2067
 LRDockWidth=3484
 Dockable=1
@@ -659,11 +659,11 @@ State=0
 Left=0
 Top=0
 Width=3823
-Height=1115
+Height=1106
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1115
+ClientHeight=1106
 TBDockHeight=1548
 LRDockWidth=8740
 Dockable=1
@@ -768,15 +768,15 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=0
+Left=952
 Top=28
 Width=3823
-Height=1385
+Height=1375
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1385
-TBDockHeight=1385
+ClientHeight=1375
+TBDockHeight=1375
 LRDockWidth=3823
 Dockable=1
 StayOnTop=0
@@ -800,7 +800,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
 ClientHeight=4510
-TBDockHeight=9010
+TBDockHeight=8769
 LRDockWidth=2000
 Dockable=1
 StayOnTop=0
@@ -824,7 +824,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1896
 ClientHeight=3471
-TBDockHeight=9010
+TBDockHeight=8769
 LRDockWidth=1896
 Dockable=1
 StayOnTop=0
@@ -843,12 +843,12 @@ State=0
 Left=0
 Top=533
 Width=2000
-Height=2183
+Height=2192
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=2183
-TBDockHeight=9010
+ClientHeight=2192
+TBDockHeight=8769
 LRDockWidth=2000
 Dockable=1
 StayOnTop=0
