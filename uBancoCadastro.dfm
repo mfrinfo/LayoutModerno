@@ -13,17 +13,19 @@ inherited frmBancoCadastro: TfrmBancoCadastro
   end
   inherited pnlFormLineLeft: TPanel
     Height = 264
+    ExplicitHeight = 264
   end
   inherited pnlFormLineRight: TPanel
     Height = 264
+    ExplicitHeight = 264
   end
   inherited pnlFormLineBottom: TPanel
     Top = 291
+    ExplicitTop = 291
   end
   inherited pnlPrincipal: TPanel
     Height = 264
-    ExplicitLeft = 17
-    ExplicitTop = 32
+    ExplicitHeight = 264
     object Label1: TLabel [0]
       Left = 32
       Top = 21
@@ -58,6 +60,7 @@ inherited frmBancoCadastro: TfrmBancoCadastro
     end
     inherited pnlPrincipalBottom: TPanel
       Top = 215
+      ExplicitTop = 215
     end
     object DBEdit1: TDBEdit
       Tag = 81
