@@ -11,7 +11,9 @@ uses
   uDtmConexao in 'uDtmConexao.pas' {dtmConexao: TDataModule},
   uBancoListagem in 'uBancoListagem.pas' {frmBancoListagem},
   uEnum in 'uEnum.pas',
-  uBancoCadastro in 'uBancoCadastro.pas' {frmBancoCadastro};
+  uBancoCadastro in 'uBancoCadastro.pas' {frmBancoCadastro},
+  uCartaoListagem in 'uCartaoListagem.pas' {frmCartaoListagem},
+  uCartaoCadastro in 'uCartaoCadastro.pas' {frmCartaoCadastro};
 
 {$R *.res}
 
