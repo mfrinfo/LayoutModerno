@@ -5,6 +5,10 @@ inherited frmHerancaCadastro: TfrmHerancaCadastro
   ExplicitHeight = 345
   PixelsPerInch = 96
   TextHeight = 13
+  inherited pnlHeader: TPanel
+    ExplicitLeft = -7
+    ExplicitTop = -6
+  end
   inherited pnlFormLineLeft: TPanel
     Height = 317
     ExplicitHeight = 317
@@ -25,8 +29,6 @@ inherited frmHerancaCadastro: TfrmHerancaCadastro
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 4
-    ExplicitLeft = -5
-    ExplicitTop = 26
     object pnlPrincipalBottom: TPanel
       Left = 0
       Top = 268

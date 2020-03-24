@@ -72,7 +72,7 @@ implementation
 
 {$R *.dfm}
 
-uses uSplash, uHerancaBase, uFuncoes, uBancoListagem;
+uses uSplash, uHerancaBase, uFuncoes, uBancoListagem, uLogin;
 
 procedure TfrmPrincipal.btnConfiguracoesClick(Sender: TObject);
 begin
@@ -308,9 +308,13 @@ begin
   frmSplash.Show;
   frmSplash.Refresh;
 
-  FiltrarMenuProcesso('FIN');
-
   Sleep(1000);
+
+  frmLogin:=TfrmLogin.Create(Self);
+  frmLogin.ShowModal;
+  frmLogin.Release;
+
+  FiltrarMenuProcesso('FIN');
 
   if Assigned(frmSplash) then
      frmSplash.Free;
