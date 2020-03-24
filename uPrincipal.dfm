@@ -26,8 +26,6 @@ object frmPrincipal: TfrmPrincipal
     Align = alLeft
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = 4
-    ExplicitTop = 42
     object pnlMenu: TPanel
       Left = 16
       Top = 12
@@ -79,7 +77,6 @@ object frmPrincipal: TfrmPrincipal
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 8
     end
     object btnFinanceiro: TJvImgBtn
       Left = 16
@@ -126,10 +123,6 @@ object frmPrincipal: TfrmPrincipal
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = 185
-    ExplicitTop = 73
-    ExplicitWidth = 844
-    ExplicitHeight = 580
     object pnlPrincipalCenterLeft: TPanel
       Left = 0
       Top = 10
@@ -138,8 +131,6 @@ object frmPrincipal: TfrmPrincipal
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitLeft = 1
-      ExplicitTop = 6
     end
     object pnlPrincipalCenterRight: TPanel
       Left = 799
@@ -149,8 +140,6 @@ object frmPrincipal: TfrmPrincipal
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 834
-      ExplicitHeight = 560
     end
     object pnlPrincipalCenterTop: TPanel
       Left = 0
@@ -160,7 +149,6 @@ object frmPrincipal: TfrmPrincipal
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitWidth = 844
     end
     object pnlPrincipalCenterBottom: TPanel
       Left = 0
@@ -170,8 +158,6 @@ object frmPrincipal: TfrmPrincipal
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 3
-      ExplicitTop = 570
-      ExplicitWidth = 844
     end
     object pgcPrincipal: TPageControl
       Left = 10
@@ -183,8 +169,6 @@ object frmPrincipal: TfrmPrincipal
       TabOrder = 4
       object tbsMenu: TTabSheet
         Caption = #205'CONES'
-        ExplicitWidth = 816
-        ExplicitHeight = 532
         object scbIcones: TScrollBox
           Left = 0
           Top = 21
@@ -196,8 +180,6 @@ object frmPrincipal: TfrmPrincipal
           Ctl3D = False
           ParentCtl3D = False
           TabOrder = 0
-          ExplicitLeft = -2
-          ExplicitTop = 19
         end
         object pnlPesquisaIcone: TPanel
           Left = 0
@@ -207,7 +189,6 @@ object frmPrincipal: TfrmPrincipal
           Align = alTop
           BevelOuter = bvNone
           TabOrder = 1
-          ExplicitWidth = 836
           object edtLocalizarMenu: TSearchBox
             Left = 0
             Top = 0
@@ -217,9 +198,6 @@ object frmPrincipal: TfrmPrincipal
             TabOrder = 0
             TextHint = 'DIGITE O QUE VOC'#202' DESEJA FAZER'
             OnInvokeSearch = edtLocalizarMenuInvokeSearch
-            ExplicitLeft = 16
-            ExplicitTop = 12
-            ExplicitWidth = 836
           end
         end
       end
@@ -327,8 +305,6 @@ object frmPrincipal: TfrmPrincipal
       Color = 15457754
       ParentBackground = False
       TabOrder = 0
-      ExplicitTop = 44
-      ExplicitWidth = 1029
     end
   end
   object imgButtons: TImageList
