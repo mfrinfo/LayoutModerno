@@ -54,7 +54,7 @@ implementation
 
 {$R *.dfm}
 
-uses uPrincipal;
+uses uPrincipal, uFuncoes;
 
 procedure TfrmHerancaCadastro.bntGravarClick(Sender: TObject);
 begin

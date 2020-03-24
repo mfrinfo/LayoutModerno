@@ -72,7 +72,7 @@ implementation
 
 {$R *.dfm}
 
-uses uSplash, uHerancaBase, uFuncoes, uBancoListagem;
+uses uSplash, uHerancaBase, uFuncoes, uBancoListagem, uLogin;
 
 procedure TfrmPrincipal.btnConfiguracoesClick(Sender: TObject);
 begin
@@ -81,14 +81,12 @@ end;
 
 procedure TfrmPrincipal.btnConfiguracoesMouseEnter(Sender: TObject);
 begin
-  (Sender as TJvImgBtn).ImageIndex:=4;
-  (Sender as TJvImgBtn).Cursor:=crHandPoint;
+  ButtonMouseEnter(Sender,4);
 end;
 
 procedure TfrmPrincipal.btnConfiguracoesMouseLeave(Sender: TObject);
 begin
-  (Sender as TJvImgBtn).ImageIndex:=5;
-  (Sender as TJvImgBtn).Cursor:=crDefault;
+  ButtonMouseLeave(Sender,5);
 end;
 
 procedure TfrmPrincipal.btnFinanceiroClick(Sender: TObject);
@@ -98,14 +96,12 @@ end;
 
 procedure TfrmPrincipal.btnFinanceiroMouseEnter(Sender: TObject);
 begin
-  (Sender as TJvImgBtn).ImageIndex:=0;
-  (Sender as TJvImgBtn).Cursor:=crHandPoint;
+  ButtonMouseEnter(Sender,0);
 end;
 
 procedure TfrmPrincipal.btnFinanceiroMouseLeave(Sender: TObject);
 begin
-  (Sender as TJvImgBtn).ImageIndex:=1;
-  (Sender as TJvImgBtn).Cursor:=crDefault;
+  ButtonMouseLeave(Sender,1);
 end;
 
 procedure TfrmPrincipal.btnVendasClick(Sender: TObject);
@@ -115,14 +111,12 @@ end;
 
 procedure TfrmPrincipal.btnVendasMouseEnter(Sender: TObject);
 begin
-  (Sender as TJvImgBtn).ImageIndex:=2;
-  (Sender as TJvImgBtn).Cursor:=crHandPoint;
+  ButtonMouseEnter(Sender, 2);
 end;
 
 procedure TfrmPrincipal.btnVendasMouseLeave(Sender: TObject);
 begin
-  (Sender as TJvImgBtn).ImageIndex:=3;
-  (Sender as TJvImgBtn).Cursor:=crDefault;
+  ButtonMouseLeave(Sender,3);
 end;
 
 procedure TfrmPrincipal.FiltrarMenuProcesso(aProcesso:String);
@@ -314,12 +308,18 @@ begin
   frmSplash.Show;
   frmSplash.Refresh;
 
-  FiltrarMenuProcesso('FIN');
-
   Sleep(1000);
+
+  frmLogin:=TfrmLogin.Create(Self);
+  frmLogin.ShowModal;
+  frmLogin.Release;
+
+  FiltrarMenuProcesso('FIN');
 
   if Assigned(frmSplash) then
      frmSplash.Free;
+
+  Self.FormStyle:=fsStayOnTop;
 end;
 
 procedure TfrmPrincipal.imgBtnCloseClick(Sender: TObject);

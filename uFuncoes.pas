@@ -4,13 +4,15 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uHerancaBase, Vcl.StdCtrls,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
   Vcl.Imaging.pngimage, Vcl.ExtCtrls, Data.DB, Vcl.Mask, Vcl.Grids, Vcl.DBGrids,
-  System.ImageList, Vcl.ImgList, Vcl.DBCtrls, Vcl.ComCtrls;
+  System.ImageList, Vcl.ImgList, Vcl.DBCtrls, Vcl.ComCtrls, JvCtrls;
 
   procedure CriarAba(aForm: TFormClass; aPageControl:TPageControl; aIndexImagem: Integer);
   function AbaExiste(aNomeAba:string; aPageControl:TPageControl): Boolean;
   procedure FecharAba(aNomeAba:string; aPageControl:TPageControl);
+  procedure ButtonMouseEnter(Sender: TObject; ImageIndex:Integer);
+  procedure ButtonMouseLeave(Sender: TObject; ImageIndex:Integer);
 
 implementation
 
@@ -65,6 +67,18 @@ begin
       Break;
     end;
   end;
+end;
+
+procedure ButtonMouseEnter(Sender: TObject; ImageIndex:Integer);
+begin
+  (Sender as TJvImgBtn).ImageIndex:=ImageIndex;
+  (Sender as TJvImgBtn).Cursor:=crHandPoint;
+end;
+
+procedure ButtonMouseLeave(Sender: TObject; ImageIndex:Integer);
+begin
+  (Sender as TJvImgBtn).ImageIndex:=ImageIndex;
+  (Sender as TJvImgBtn).Cursor:=crDefault;
 end;
 
 end.
